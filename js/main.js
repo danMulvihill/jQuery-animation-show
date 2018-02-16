@@ -1,4 +1,3 @@
-console.log("Working!");
 
 //native way:
 // document.addEventListener("DOMContentLoad", function(){
@@ -9,48 +8,40 @@ $(document).ready(function(){
 
     console.log("doc is ready. Thanks jQuery!");
 
-    function bake(){
-        console.log("bake!");
-    }
 
-    function preHeatOven(callback){
-        // setTimeout(function(){
-        //     console.log("preheating...");
-        // }, 3000);
-
-        console.log("Oven is pre-heated");
-        callback();
-    }
-
-    preHeatOven(bake);
-    
-
-    var myTitle = $("#title")[0];
-    myTitle.innerText = "Foo Bar";
-
-    $("#title").html("Foo jQuery")
-
-    //$("#title").hide();
-
-    $("#sub-title").html("Subtitle");
-
-
-    $('ul.js-links a').on('click', function(e){
-        console.log("You just clicked: ", e, this);
-        $(this).fadeOut(700)
+    $('ul.js-list a').on('click', function(e){
+        $(this).html("Fadding Away. Bye, bye!");
+        $(this).fadeOut(1700)
     })
 
+    $('#action-button').on("click", startShow)
 
-    function showDone(){
-        console.log("all done");
+    function startShow(){
+        
         $("div#square").animate({
             width: "50%",
             opacity: .9
-        }, 5000, function(){ $("#sub-title").html("That was quick!");});
-    
-       
+        }, 5000, changeSubtitle);   
     }
 
-    $(".js-heading").show(showDone);
+    function changeSubtitle(){
+        $("#sub-title").html("That was quick!");
+        setTimeout(function(){
+            $(".js-heading").html("It's not over...")
+        },1000);
+        setTimeout(showPart2, 2500)   
+    }
+
+    function showPart2(){
+        $("ul").animate({
+            opacity: 1.0
+        },2000, function(){ $(".js-heading").html("Now it's over. Wasn't that great?")});
+        $("ul li").animate({
+            padding: "70px"
+        },3000) 
+    }
+    
+
+    $(".js-heading").show();
 
 }); //closes document ready

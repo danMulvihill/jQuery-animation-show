@@ -2,24 +2,41 @@ body{
     font-family: Roboto, sans-serif;
 }
 
-.copy{
-    margin-body: 9px;
+#title{
+    text-align: center;
 }
 
 ul{
-    margin-left: 30px;
+    margin: 25px auto;
+    opacity: 0;
 }
 
 ul li{
-    list-style-type: square;
+    background: orange;
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px;
 }
 
 #square{
     border: 3px solid lightcoral;
     opacity: 0;
+    margin: 25px auto;
 
 }
 
 .subsubheading{
     display:none;
+}
+
+#action-button{
+    display:block;
+    font-size: 2em;
+    margin: 30px auto;
+    padding: 20px;
+    border: 0;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
 }
