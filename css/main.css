@@ -1,0 +1,25 @@
+body{
+    font-family: Roboto, sans-serif;
+}
+
+.copy{
+    margin-body: 9px;
+}
+
+ul{
+    margin-left: 30px;
+}
+
+ul li{
+    list-style-type: square;
+}
+
+#square{
+    border: 3px solid lightcoral;
+    opacity: 0;
+
+}
+
+.subsubheading{
+    display:none;
+}
