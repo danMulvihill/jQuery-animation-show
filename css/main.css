@@ -9,6 +9,8 @@ body{
 ul{
     margin: 25px auto;
     opacity: 0;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 ul li{
