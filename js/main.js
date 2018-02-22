@@ -19,21 +19,66 @@ $(document).ready(function(){
     function startShow(){
         
         $("div#square").animate({
-            width: "5%",
+            width: "23%",
             opacity: .9
         }, 5000, changeSubtitle); 
         $("#action-button").text("The Show ...")
     }
 
     function changeSubtitle(){
+        
         $("#sub-title").html("That was quick!");
         setTimeout(function(){
-            $(".js-heading").html("It's not over...")
+            $(".js-heading").css("visibility", "visible");
+            $(".js-heading").html("It's not over...");
         },1000);
         setTimeout(showPart2, 2500)   
     }
 
     function showPart2(){
+        $("div#square").animate({
+            width: "100%"
+        },3000);
+        $("#j").animate({
+            left: "0",
+        },1000);
+        $("#Q").animate({
+            left: "0"
+        },3000);
+        $("#u").animate({
+            left: "0"
+        },6000);
+        $("#e").animate({
+            left: "0"
+        },9000);
+        $("#r").animate({
+            left: "0"
+        },12000);
+        $("#y").animate({
+            left: "0"
+        },15000);
+        $("#j").animate({
+            left: "5000px",
+        },1000);
+        $("#Q").animate({
+            left: "5000px"
+        },2000);
+        $("#u").animate({
+            left: "5000px"
+        },3000);
+        $("#e").animate({
+            left: "5000px"
+        },2000);
+        $("#r").animate({
+            left: "5000px"
+        },1000);
+        $("#y").animate({
+            left: "5000px"
+        },5000);
+        setTimeout(showPart3, 15000)   
+    }
+
+    function showPart3(){
         $("#sub-title").css("visibility", "hidden");
         $("ul").animate({
             opacity: 1.0
@@ -107,6 +152,7 @@ $(document).ready(function(){
         );
         $("#square").fadeOut(8000);
         $("#action-button").text("The End").css({"background":"black","color":"white"})
+        $("#action-button").fadeOut(20000);
     }
     
 

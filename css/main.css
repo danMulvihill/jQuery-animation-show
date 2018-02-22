@@ -24,11 +24,27 @@ ul li{
     border: 3px solid lightcoral;
     opacity: 0;
     margin: 25px auto;
-
+    position:relative;
+    height:40px;
+}
+#j,#Q,#u,#e,#r,#y{
+    display:inline-block;
+    position: absolute;
+    width: 20px;
+    height:20px;
+    font-weight: bold;
+    font-size: 2em;
 }
 
+#j{left:5%;color:red;}
+#Q{left:20%;color:orange;}
+#u{left:35%;color:yellow}
+#e{left:50%;color:green;}
+#r{left:65%;color:blue;}
+#y{left:80%;color:blueviolet}
+
 .subsubheading{
-    display:none;
+    visibility: hidden;
 }
 
 #action-button{
