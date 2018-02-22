@@ -21,7 +21,8 @@ $(document).ready(function(){
         $("div#square").animate({
             width: "5%",
             opacity: .9
-        }, 5000, changeSubtitle);   
+        }, 5000, changeSubtitle); 
+        $("#action-button").text("The Show ...")
     }
 
     function changeSubtitle(){
@@ -102,7 +103,7 @@ $(document).ready(function(){
     function endShow() {
         setTimeout(
             function(){ $(".js-heading").html("Now it's over. Wasn't that fun?")}
-            ,2000
+            ,4000
         );
         $("#square").fadeOut(8000);
         $("#action-button").text("The End").css({"background":"black","color":"white"})
