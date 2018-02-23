@@ -2,7 +2,7 @@ body{
     font-family: Roboto, sans-serif;
 }
 
-#title{
+#title, #sub-title, .subsubheading{
     text-align: center;
 }
 
@@ -21,11 +21,13 @@ ul li{
 }
 
 #square{
+    
     border: 3px solid lightcoral;
     opacity: 0;
     margin: 25px auto;
     position:relative;
     height:40px;
+
 }
 #j,#Q,#u,#e,#r,#y{
     display:inline-block;
@@ -34,6 +36,7 @@ ul li{
     height:20px;
     font-weight: bold;
     font-size: 2em;
+    
 }
 
 #j{left:5%;color:red;}

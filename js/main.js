@@ -36,45 +36,20 @@ $(document).ready(function(){
     }
 
     function showPart2(){
-        $("div#square").animate({
-            width: "100%"
-        },3000);
-        $("#j").animate({
-            left: "0",
-        },1000);
-        $("#Q").animate({
-            left: "0"
-        },3000);
-        $("#u").animate({
-            left: "0"
-        },6000);
-        $("#e").animate({
-            left: "0"
-        },9000);
-        $("#r").animate({
-            left: "0"
-        },12000);
-        $("#y").animate({
-            left: "0"
-        },15000);
-        $("#j").animate({
-            left: "5000px",
-        },1000);
-        $("#Q").animate({
-            left: "5000px"
-        },2000);
-        $("#u").animate({
-            left: "5000px"
-        },3000);
-        $("#e").animate({
-            left: "5000px"
-        },2000);
-        $("#r").animate({
-            left: "5000px"
-        },1000);
-        $("#y").animate({
-            left: "5000px"
-        },5000);
+        $("div#square").animate({width: "100%"},3000);
+        $("#j").animate({ left: "0"},1000);
+        $("#Q").animate({ left: "0"},3000);
+        $("#u").animate({ left: "0"},6000);
+        $("#e").animate({ left: "0"},9000);
+        $("#r").animate({ left: "0"},12000);
+        $("#y").animate({ left: "0"},15000);
+
+        $("#j").animate({ left: "3000px"},1000);
+        $("#Q").animate({ left: "3000px"},2000);
+        $("#u").animate({ left: "3000px"},3000);
+        $("#e").animate({ top: "-5000px"},4000);
+        $("#r").animate({ left: "3000px", top: "500px"},5000);
+        $("#y").animate({ left: "3000px"},5000);
         setTimeout(showPart3, 15000)   
     }
 
@@ -118,18 +93,18 @@ $(document).ready(function(){
         },7000);
         $("ul li").animate({
             padding: "0px"
-        },5000);
+        },8000);
         $("ul li:last-child").animate({
             borderRadius: "0%"
-        }, 2000);
+        }, 4000);
         $("ul li:nth-child(4)").animate({
             width: "50px",
             borderRadius: "50%"
-        }, 2000);
+        }, 4000);
         $("ul li:nth-child(3)").animate({
             width: "50px",
             borderRadius: "50%"
-        }, 8000);     
+        }, 10000);     
         $("ul li:nth-child(2)").animate({
             borderRadius: "0%"
         }, 8000);
